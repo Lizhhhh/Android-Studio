@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你会那些移动开发: "
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="15dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOS"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_1"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="React Native"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_2"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weex"
+        android:textSize="20sp"
+        android:layout_below="@id/cb_3"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_5"
+        android:text="Flutter"
+        android:layout_below="@id/cb_4"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_6"
+        android:layout_below="@id/cb_5"
+        android:text="其他"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cb_6"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="你的兴趣:"
+            android:textColor="#000"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_7"
+            android:text="编程"
+            android:textSize="20sp"
+            android:button="@drawable/bg_check"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_8"
+            android:text="吃东西..."
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:button="@drawable/bg_check"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
