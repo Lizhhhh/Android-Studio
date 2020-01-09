@@ -1,0 +1,1294 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Administrator\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E7%AC%AC1%E7%AB%A0-android-%E5%88%9D%E4%BD%93%E9%AA%8C">&#x7B2C;1&#x7AE0; Android &#x521D;&#x4F53;&#x9A8C;</h1>
+
+<h2 class="mume-header" id="11-android%E5%BC%80%E5%8F%91%E6%A6%82%E8%BF%B0">1.1 Android&#x5F00;&#x53D1;&#x6982;&#x8FF0;</h2>
+
+<ul>
+<li>Android&#x662F;Google&#x5F00;&#x53D1;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</li>
+<li>Android&#x5F00;&#x53D1;&#x662F;&#x79FB;&#x52A8;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x7684;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x4E4B;&#x4E00;(Android&#x3001;IOS&#x3001;H5 App&#x3001;Native + H5&#x3001; RN&#x3001;ionic&#x3001;MUI...)</li>
+</ul>
+<h2 class="mume-header" id="12-android%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7">1.2 Android&#x5F00;&#x53D1;&#x5DE5;&#x5177;</h2>
+
+<ul>
+<li>Android Studio</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;Android Studio?
+<ul>
+<li>Android Studio&#x662F;Google&#x81EA;&#x5DF1;&#x63A8;&#x51FA;&#x7684;Android&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x5DE5;&#x5177;,&#x4E14;Google&#x5DF2;&#x7ECF;&#x505C;&#x6B62;&#x5BF9;Eclipse&#x7684;&#x652F;&#x6301;.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="13-%E7%AC%AC%E4%B8%80%E4%B8%AAandroid%E5%BA%94%E7%94%A8">1.3 &#x7B2C;&#x4E00;&#x4E2A;Android&#x5E94;&#x7528;</h2>
+
+<ul>
+<li>Everything begin with Hello World!</li>
+<li>Android Studio&#x6700;&#x5927;&#x7684;&#x7279;&#x5B9A;&#x662F;&#x4F7F;&#x7528;Gradle&#x6765;&#x6784;&#x5EFA;&#x9879;&#x76EE;...<br>
+[&#x90E8;&#x5206;&#x76EE;&#x5F55;&#x8BF4;&#x660E;]</li>
+</ul>
+<ol>
+<li><code>res</code>: &#x5B58;&#x653E;&#x8D44;&#x6E90;</li>
+<li><code>drawable</code>: &#x56FE;&#x7247;</li>
+<li><code>layout</code>: &#x5E03;&#x5C40;&#x6587;&#x4EF6;</li>
+<li><code>mipmap-hdpi</code>: logo&#x56FE;&#x7247;</li>
+<li><code>values</code>: &#x989C;&#x8272;&#x3001;&#x6587;&#x5B57;</li>
+<li><code>AndroidMainfest.xml</code>: &#x5E94;&#x7528;&#x91CC;&#x9762;&#x7528;&#x5230;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;,&#x90FD;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x91CC;&#x9762;&#x6CE8;&#x518C;&#x4E00;&#x4E0B;</li>
+</ol>
+<p>[&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x8BF4;&#x660E;]</p>
+<ul>
+<li><code>src/main/java/com.skypan.helloworld/MainActivity</code>&#x5185;&#x7684;&#x51FD;&#x6570;<code>setContentView(R.layout.activity_main)</code>:&#x8868;&#x793A;,&#x4F7F;&#x7528;&#x4E86;<code>activity_main&#x5E03;&#x5C40;</code></li>
+<li>&#x6253;&#x5F00;<code>activity_main.xml</code>,&#x5C06;&#x6807;&#x7B7E;&#x540D;&#x6539;&#x4E3A;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LinearLayout</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>LinearLayout</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li><code>TextView android:text=&quot;Hello World&quot;</code>: &#x663E;&#x793A;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x503C;&#x4E3A;Hello World</li>
+</ul>
+<h1 class="mume-header" id="%E7%AC%AC2%E7%AB%A0-ui%E7%BB%84%E4%BB%B6">&#x7B2C;2&#x7AE0; UI&#x7EC4;&#x4EF6;</h1>
+
+<h2 class="mume-header" id="21-%E5%B8%83%E5%B1%80%E7%AE%A1%E7%90%86%E5%99%A8">2.1 &#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;</h2>
+
+<ul>
+<li>&#x7EBF;&#x6027;&#x5E03;&#x5C40;(LinearLayout)</li>
+<li>&#x76F8;&#x5BF9;&#x5E03;&#x5C40;(RelativeLayout)</li>
+<li>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x5360;&#x4E86;&#x63A5;&#x8FD1;&#x767E;&#x5206;&#x4E4B;99</li>
+</ul>
+<h3 class="mume-header" id="linearlayout%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80">LinearLayout(&#x7EBF;&#x6027;&#x5E03;&#x5C40;)</h3>
+
+<p>[&#x6700;&#x5E38;&#x7528;&#x5C5E;&#x6027;]:</p>
+<ul>
+<li><code>android:id</code>: &#x63A7;&#x4EF6;&#x7684;id</li>
+<li><code>android:layout_width</code>: &#x5E03;&#x5C40;&#x7684;&#x5BBD;&#x5EA6;</li>
+<li><code>android:layout_height</code>: &#x5E03;&#x5C40;&#x7684;&#x9AD8;&#x5EA6;</li>
+<li><code>android:background</code>: &#x5E03;&#x5C40;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;</li>
+<li><code>android:layout_margin</code>: &#x5E03;&#x5C40;&#x7684;&#x5DE6;&#x53F3;&#x8FB9;&#x8DDD;</li>
+<li><code>android:layout_padding</code>: &#x5E03;&#x5C40;&#x7684;&#x5185;&#x4FA7;&#x8FB9;&#x8DDD;</li>
+<li><code>android:orientation</code>: &#x5E03;&#x5C40;&#x7684;&#x65B9;&#x5411;</li>
+<li><code>dp</code>: &#x6839;&#x636E;&#x5C4F;&#x5E55;&#x81EA;&#x5DF1;&#x7B97;&#x51FA;&#x5927;&#x5C0F;</li>
+<li><code>match_parent</code>: &#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;</li>
+<li><code>&lt;View /&gt;</code>: &#x662F;&#x6240;&#x6709;&#x63A7;&#x4EF6;&#x7684;&#x7236;&#x7C7B;,&#x5982;<code>&lt;Button /&gt;</code></li>
+<li><code>android: gravity= &quot;bottom&quot;</code>: &#x63A7;&#x4EF6;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6392;&#x5217;&#x65B9;&#x5F0F;</li>
+<li><code>weight</code>: &#x6743;&#x91CD;,&#x5360;&#x7236;&#x5143;&#x7D20;&#x5BBD;&#x5EA6;(&#x5269;&#x4F59;)&#x7684;&#x6743;&#x91CD;.&#x76F8;&#x5F53;&#x4E8E;<code>flex&#x5E03;&#x5C40;</code>&#x4E2D;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;<code>flex:1</code>; &#x628A;&#x5269;&#x4F59;&#x5185;&#x5BB9;&#x6309;&#x7167;&#x6743;&#x91CD;&#x53BB;&#x5206;&#x914D;</li>
+</ul>
+<p>[&#x5C0F;&#x7ED3;]:</p>
+<ul>
+<li>&#x901A;&#x8FC7;Android Studio&#x65B0;&#x5EFA;&#x7684;&#x9879;&#x76EE;,&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x662F;<code>/app/src/main/java/com.skypan.helloworld/MainActivity</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token operator">:</span> <span class="token class-name">AppCompatActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  override fun <span class="token function">onCreate</span> <span class="token punctuation">(</span>saveInstanceState<span class="token operator">:</span> <span class="token class-name">Bundle</span><span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_main<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>&#x5176;&#x4E2D;<code>setContentView</code>&#x4F7F;&#x7528;&#x5230;&#x4E86;<code>activity_main</code>:&#x603B;&#x4F53;&#x7684;&#x5E03;&#x5C40;&#x6837;&#x5F0F;</li>
+</ul>
+<h3 class="mume-header" id="212-relativelayout%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80">2.1.2 RelativeLayout(&#x76F8;&#x5BF9;&#x5E03;&#x5C40;)</h3>
+
+<p>[&#x6700;&#x5E38;&#x89C1;&#x5C5E;&#x6027;]:</p>
+<ul>
+<li><code>android:layout_toLeftOf</code>: &#x5728;&#x8C01;&#x5DE6;&#x8FB9;</li>
+<li><code>android:layout_toRightOf</code>: &#x5728;&#x8C01;&#x53F3;&#x8FB9;</li>
+<li><code>android:layout_alignBottom</code>: &#x8DDF;&#x8C01;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;</li>
+<li><code>android:layout_alignParentBottom</code>: &#x8DDF;&#x7236;&#x5143;&#x7D20;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;</li>
+<li><code>android:layout_below</code>: &#x5728;&#x8C01;&#x7684;&#x4E0B;&#x9762;</li>
+</ul>
+<p><a href="%60ListViewActivity.java%60">&#x6817;&#x5B50;</a>:</p>
+<ul>
+<li>&#x9760;&#x7236;&#x5143;&#x7D20;&#x53F3;&#x4E0B;&#x89D2;&#x5BF9;&#x9F50;</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">RelativeLayout</span><span class="token punctuation">&gt;</span></span>
+  <span class="token operator">&lt;</span><span class="token class-name">View</span>
+    android<span class="token operator">:</span>id<span class="token operator">=</span><span class="token string">&quot;@+id/view_1&quot;</span>
+    android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>background<span class="token operator">=</span><span class="token string">&quot;#000000&quot;</span>
+    android<span class="token operator">:</span>layout_alignParentBottom<span class="token operator">=</span><span class="token string">&quot;true&quot;</span>
+    android<span class="token operator">:</span>layout_alignParentRight<span class="token operator">=</span><span class="token string">&quot;true&quot;</span>
+  <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token class-name">RelativeLayout</span><span class="token operator">&gt;</span>
+</pre><ul>
+<li>View2&#x76F8;&#x5BF9;&#x4E8E;View1&#x7684;&#x53F3;&#x8FB9;&#x5BF9;&#x9F50;</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">RelativeLayout</span><span class="token punctuation">&gt;</span></span>
+  <span class="token operator">&lt;</span><span class="token class-name">View</span>
+    android<span class="token operator">:</span>id<span class="token operator">=</span><span class="token string">&quot;@+id/view_1&quot;</span>
+    android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>background<span class="token operator">=</span><span class="token string">&quot;#000000&quot;</span>
+  <span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token class-name">View</span>
+    android<span class="token operator">:</span>id<span class="token operator">=</span><span class="token string">&quot;@+id/view_2&quot;</span>
+    android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">&quot;100dp&quot;</span>
+    android<span class="token operator">:</span>background<span class="token operator">=</span><span class="token string">&quot;#FF0033&quot;</span>
+    android<span class="token operator">:</span>layout_toRightOf<span class="token operator">=</span><span class="token string">&quot;@id/view_1&quot;</span>
+  <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token class-name">RelativeLayout</span><span class="token operator">&gt;</span>
+</pre><h2 class="mume-header" id="22-textview">2.2 TextView</h2>
+
+<ul>
+<li>&#x6587;&#x5B57;&#x5927;&#x5C0F;&#x3001;&#x989C;&#x8272;</li>
+<li>&#x663E;&#x793A;&#x4E0D;&#x4E0B;&#x4F7F;&#x7528;...</li>
+<li>&#x6587;&#x5B57; + icon</li>
+<li>&#x4E2D;&#x5212;&#x7EBF;&#x3001;&#x4E0B;&#x5212;&#x7EBF;</li>
+</ul>
+<p><a href="%60ListViewActivity.java%60">&#x6817;&#x5B50;</a>:</p>
+<ul>
+<li>1.&#x5199;&#x4E00;&#x4E2A;&#x5BBD;&#x5EA6;&#x968F;&#x7236;&#x5143;&#x7D20;,&#x9AD8;&#x5EA6;&#x7B49;&#x4E8E;&#x6587;&#x672C;&#x9AD8;&#x5EA6;&#x7684;&#x6309;&#x94AE;&#x63A7;&#x4EF6;</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token operator">&lt;</span><span class="token class-name">LinearLayout</span>
+  android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">&quot;match_parent&quot;</span>
+  android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">&quot;match_parent&quot;</span>
+  android<span class="token operator">:</span>orientation<span class="token operator">=</span><span class="token string">&quot;vertical&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token class-name">Button</span>
+    android<span class="token operator">:</span>id<span class="token operator">=</span><span class="token string">&quot;@+id/btn_textview&quot;</span>
+    android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">&quot;match_parent&quot;</span>
+    android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">&quot;wrap_content&quot;</span>
+    android<span class="token operator">:</span>text<span class="token operator">=</span><span class="token string">&quot;TextView&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span><span class="token class-name">LinearLayout</span><span class="token operator">&gt;</span>
+</pre><ul>
+<li>2.&#x70B9;&#x51FB;Button&#x7C7B;&#x5B9E;&#x73B0;&#x8DF3;&#x8F6C;</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">// MainActivity.java</span>
+<span class="token keyword">import</span> <span class="token namespace">andoridx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>content</span><span class="token punctuation">.</span><span class="token class-name">Intent</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// &#x58F0;&#x660E; button</span>
+  <span class="token keyword">private</span> <span class="token class-name">Button</span> mBtnTextView<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@override</span>
+  pretected <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> saveInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnTextView <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_textview<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnTextView<span class="token punctuation">.</span><span class="token function">setOutClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8DF3;&#x8F6C;&#x5230;TextView&#x6F14;&#x793A;&#x754C;&#x9762;</span>
+        <span class="token class-name">Intent</span> intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span>packageContext<span class="token operator">:</span> <span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">TextViewActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">startActivity</span><span class="token punctuation">(</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>3.&#x80FD;&#x5728;MainActivity&#x4E2D;&#x4F7F;&#x7528;TextViewActivity&#x7684;&#x539F;&#x56E0;</li>
+<li><code>AndroidMainfest.xml</code>&#x914D;&#x7F6E;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>application</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>allowBckup</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">...</span>
+  <span class="token attr-name">&lt;activity</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>.MainActivity<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>intent-filter</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>action</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>android.intent.action.MAIN<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>category</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>android.intent.category.LAUNCHER<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>intent-filter</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activity</span><span class="token punctuation">&gt;</span></span>
+&gt;
+</pre><ul>
+<li>4.Java&#x64CD;&#x4F5C;&#x7684;TextView: <code>android:id=&quot;@+id/tv_4&quot;</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">// TextViewActivity.java</span>
+<span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TextViewActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">private</span> <span class="token class-name">TextView</span> mTv4<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span> <span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_text_view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x83B7;&#x53D6; id.tv_4</span>
+    mTv4 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x7ED9; id.tv_4&#x5212;&#x7EBF;</span>
+    mTv4<span class="token punctuation">.</span><span class="token function">getPaint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setFlags</span><span class="token punctuation">(</span><span class="token class-name">Paint</span><span class="token punctuation">.</span>STRING_THRU_TEXT_FLAG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x53BB;&#x952F;&#x9F7F;</span>
+    mTv4<span class="token punctuation">.</span><span class="token function">getPaint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setAntiAlias</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="23-button">2.3 Button</h2>
+
+<ul>
+<li>&#x6587;&#x5B57;&#x5927;&#x5C0F;&#x3001;&#x989C;&#x8272;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x80CC;&#x666F;&#x5F62;&#x72B6;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6309;&#x538B;&#x6548;&#x679C;</li>
+<li>&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</li>
+</ul>
+<h3 class="mume-header" id="button%E6%A0%B7%E5%BC%8F%E7%AE%80%E5%8D%95">Button&#x6837;&#x5F0F;(&#x7B80;&#x5355;)</h3>
+
+<ul>
+<li>activity_main.xml</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/btn_button<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Button<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10dp<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="%E4%BD%BF%E7%94%A8java%E6%93%8D%E4%BD%9C%E6%8E%A7%E4%BB%B6">&#x4F7F;&#x7528;java&#x64CD;&#x4F5C;&#x63A7;&#x4EF6;</h3>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">// MainActivity.java</span>
+
+<span class="token comment">// &#x58F0;&#x660E;&#x63A7;&#x4EF6;</span>
+<span class="token keyword">private</span> <span class="token class-name">Button</span> mBtnButton
+<span class="token comment">// &#x627E;&#x5230;&#x6309;&#x94AE; btn_button</span>
+mBtnButton <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x7ED9; mBtnButton &#x6DFB;&#x52A0;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</span>
+mBtnButton<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// &#x70B9;&#x51FB;&#x6309;&#x94AE;&#x540E;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</pre><h3 class="mume-header" id="%E5%AE%9E%E7%8E%B0%E8%B7%B3%E8%BD%AC">&#x5B9E;&#x73B0;&#x8DF3;&#x8F6C;</h3>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">andoirdx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">andoird<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Button</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>content</span><span class="token punctuation">.</span><span class="token class-name">Intent</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x58F0;&#x660E;button</span>
+  <span class="token keyword">private</span> <span class="token class-name">Button</span> mBtnButton<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x627E;&#x5230;&#x6309;&#x94AE;</span>
+    mBtnButton <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnButton<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@ovrride</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8DF3;&#x8F6C;&#x5230; Button &#x6F14;&#x793A;&#x754C;&#x9762;</span>
+        <span class="token class-name">Intent</span> intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span> packageContext<span class="token operator">:</span> <span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">ButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">startActivity</span><span class="token punctuation">(</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h3 class="mume-header" id="%E5%81%9A%E4%B8%80%E4%B8%AA%E7%9F%A9%E5%BD%A2%E7%9A%84%E6%8C%89%E9%92%AE">&#x505A;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x7684;&#x6309;&#x94AE;</h3>
+
+<ul>
+<li>1.&#x5728;res/drawable -&gt; New -&gt; Drawable resource file -&gt; btn_2.xml</li>
+<li>&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shape</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>shape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>rectangle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>solid</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#ffffff<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>corners</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>radius</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15dp<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="%E6%8C%89%E5%8E%8B%E6%95%88%E6%9E%9C">&#x6309;&#x538B;&#x6548;&#x679C;</h3>
+
+<ul>
+<li>res/drawable/bg_btn4.xml</li>
+<li>&#x6837;&#x5F0F;</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>selector</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name"><span class="token namespace">android:</span>state_pressed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shape</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>solid</span> <span class="token attr-name"><span class="token namespace">android:</span>color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#cc7c00<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>corners</span> <span class="token attr-name"><span class="token namespace">android:</span>radius</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15dp<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shape</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name"><span class="token namespace">android:</span>state_pressed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shape</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>solid</span> <span class="token attr-name"><span class="token namespace">android:</span>color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#ff9900<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>corners</span> <span class="token attr-name"><span class="token namespace">android:</span>radius</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15dp<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shape</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>selector</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>&#x5F15;&#x7528;&#x5982;&#x4E0B;</li>
+<li><code>activity_button.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/btn_4<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_below</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@id/btn_3<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5dp<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Button 4<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>textSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20sp<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>textColor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#0066ff<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>background</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/bg_btn4<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="%E7%82%B9%E5%87%BB%E6%8C%89%E9%92%AE%E5%93%8D%E5%BA%94toast">&#x70B9;&#x51FB;&#x6309;&#x94AE;,&#x54CD;&#x5E94;Toast</h3>
+
+<ul>
+<li>&#x5047;&#x8BBE;&#x6709;&#x6309;&#x94AE;&#x5982;&#x4E0B;: <code>activity_button.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+ <span class="token attr-name">...</span>
+ <span class="token attr-name"><span class="token namespace">android:</span>onClick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>showToast<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><ul>
+<li>&#x5BF9;&#x5E94;Java&#x6587;&#x4EF6; <code>ButtonActivity.java</code> &#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">showToast</span><span class="token punctuation">(</span><span class="token class-name">View</span> view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span>context<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">,</span> text<span class="token operator">:</span><span class="token string">&apos;&#x70B9;&#x51FB;&apos;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>[&#x62A5;&#x9519;]:</p>
+<ul>
+<li><code>Could not find method showToast(View) in a parent or ancestor Context for android</code>: &#x5199;&#x6309;&#x94AE;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x7684;&#x65F6;&#x5019;,&#x6CA1;&#x6709;&#x4F20;&#x5165;&#x53C2;&#x6570; <code>View view</code>,&#x5C06;<code>public void showToast()</code>&#x6539;&#x4E3A;<code>public void showToast(View view)</code></li>
+</ul>
+<h3 class="mume-header" id="%E7%82%B9%E5%87%BB%E6%8C%89%E9%92%AE%E5%93%8D%E5%BA%94toast%E6%96%B9%E6%B3%952">&#x70B9;&#x51FB;&#x6309;&#x94AE;,&#x54CD;&#x5E94;Toast[&#x65B9;&#x6CD5;2]</h3>
+
+<ul>
+<li>[&#x6838;&#x5FC3;&#x65B9;&#x6CD5;] :<code>Button.setOnClickListener()</code></li>
+<li>&#x5047;&#x8BBE;&#x6709;&#x6309;&#x94AE;&#x5982;&#x4E0B;: <code>activity_button.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/btn_3<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">....</span>
+<span class="token punctuation">/&gt;</span></span>
+</pre><ul>
+<li>&#x5BF9;&#x4E8E;&#x7684;Java&#x6587;&#x4EF6;<code>ButtonActivity.java</code>&#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Button</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Toast</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">View</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ButtonActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token class-name">Button</span> mBtn3<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtn3 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtn3<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">ButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">&apos;btn3&#x88AB;&#x70B9;&#x51FB;&apos;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h3 class="mume-header" id="%E7%BB%99textview%E6%8E%A7%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6">&#x7ED9;TextView&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</h3>
+
+<ul>
+<li>TextView&#x63A7;&#x4EF6;<code>activity_button.xml</code>,&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextView</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/tv_1<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">...</span>
+<span class="token punctuation">/&gt;</span></span>
+</pre><ul>
+<li>&#x5728;Java&#x4E2D;&#x83B7;&#x53D6;&#x63A7;&#x4EF6;,&#x5E76;&#x8BBE;&#x7F6E;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;<code>ButtonActivity.java</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Toast</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">View</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ButtonActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token class-name">TextView</span> mTv1<span class="token punctuation">;</span>
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// tv_1&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</span>
+    mTv1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mTv1<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">ButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">&quot;TextView&#x88AB;&#x70B9;&#x51FB;&quot;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="24-edittext%E8%BE%93%E5%85%A5%E6%8E%A7%E4%BB%B6">2.4 EditText(&#x8F93;&#x5165;&#x63A7;&#x4EF6;)</h2>
+
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>&#x76D1;&#x542C;&#x4E8B;&#x4EF6;</li>
+<li>&#x5236;&#x4F5C;&#x767B;&#x5F55;&#x754C;&#x9762;</li>
+</ul>
+<h3 class="mume-header" id="241-%E5%8A%A0%E4%B8%80%E4%B8%AA%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%8C%89%E9%92%AE">2.4.1 &#x52A0;&#x4E00;&#x4E2A;&#x8DF3;&#x8F6C;&#x9875;&#x9762;&#x7684;&#x6309;&#x94AE;</h3>
+
+<ul>
+<li>&#x6309;&#x94AE;&#x6837;&#x5F0F;: <code>activity_main.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/btn_edittext<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>EditText<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>textAllCaps</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</pre><ul>
+<li>&#x6309;&#x94AE;&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;: <code>MainActivity.java</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>context</span><span class="token punctuation">.</span><span class="token class-name">Intent</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Button</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">View</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x58F0;&#x660E;button</span>
+  <span class="token keyword">private</span> <span class="token class-name">Button</span> mBtnEditText<span class="token punctuation">;</span>
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x627E;&#x5230; btn_edittext</span>
+    mBtnEditText <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_edittext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnEditText<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8DF3;&#x8F6C;&#x5230; EditText &#x754C;&#x9762;</span>
+        <span class="token comment">// &#x8FD9;&#x91CC;&#x5148;&#x5047;&#x8BBE;&#x6709; EditTextActivity</span>
+        <span class="token class-name">Intent</span> intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">EditTextActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">startActivity</span><span class="token punctuation">(</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>&#x6309;&#x94AE;&#x7684;&#x6D3B;&#x52A8;&#x9875;&#x9762;: <code>activity_edit_text.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RelativeLayout</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android/apk/res/android<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">xmlns:</span>app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res-auto<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">xmlns:</span>tools</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/tools<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>padding</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>15dp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>EditText</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/et_1<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50dp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>16sp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textColor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#ffad33<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>hint</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x7528;&#x6237;&#x540D;<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>EditText</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/et_2<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50dp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_below</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@id/et_1<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>hint</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x5BC6;&#x7801;<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>inputType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>textPassword<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5dp<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>RelativeLayout</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>&#x7ED9;&#x7528;&#x6237;&#x540D;&#x8F93;&#x5165;&#x6846;<code>activity_edit_text.xml</code>&#x52A0;&#x6837;&#x5F0F;</li>
+<li>&#x8F93;&#x5165;&#x63A7;&#x4EF6;&#x5982;&#x4E0B;</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>EditText</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/et_1<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">...</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>background</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/bg_username<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</pre><ul>
+<li>&#x5728;res/drawable -&gt; New -&gt; Drawable resource file -&gt; bg_username.xml(shape)</li>
+<li>&#x5199;&#x5165;&#x5F62;&#x72B6;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shape</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>shape</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>rectangle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stroke</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1dp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">andorid:</span>color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#999999<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>corners</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>radius</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5dp<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</pre><h2 class="mume-header" id="25-radiobutton">2.5 RadioButton</h2>
+
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;</li>
+<li>&#x76D1;&#x542C;&#x4E8B;&#x4EF6;</li>
+</ul>
+<h3 class="mume-header" id="251-%E6%96%B0%E5%BB%BA%E6%8C%89%E9%92%AE%E5%B9%B6%E8%B7%B3%E8%BD%AC%E5%88%B0%E7%9B%B8%E5%BA%94%E7%9A%84%E6%B4%BB%E5%8A%A8%E9%A1%B5%E9%9D%A2">2.5.1 &#x65B0;&#x5EFA;&#x6309;&#x94AE;,&#x5E76;&#x8DF3;&#x8F6C;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x6D3B;&#x52A8;&#x9875;&#x9762;</h3>
+
+<p>1.&#x5728;<code>com.skypan.textview</code>&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>RadioButtonActivity</code>&#x6D3B;&#x52A8;<br>
+2.&#x5728;&#x4E3B;&#x6837;&#x5F0F;,&#x65B0;&#x589E;&#x4E00;&#x4E2A; <code>RadioButton</code>&#x6309;&#x94AE;</p>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/btn_radiobutton<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Radio Button<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>textAllCaps</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</pre><p>3.&#x5728;&#x4E3B;&#x6D3B;&#x52A8;&#x4E2D;,&#x6DFB;&#x52A0;&#x6309;&#x94AE;&#x7684;&#x8DF3;&#x8F6C;&#x4E8B;&#x4EF6;</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x58F0;&#x660E;&#x6309;&#x94AE;</span>
+  <span class="token keyword">private</span> <span class="token class-name">Button</span> mBtnRadioButton<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnRadioButton <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Button</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_radiobutton<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mBtnRadioButton<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x8DF3;&#x8F6C;&#x5230; RadioButton &#x754C;&#x9762;</span>
+        <span class="token class-name">Intent</span> intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">RadioButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">startActivity</span><span class="token punctuation">(</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h3 class="mume-header" id="252-%E5%B0%81%E8%A3%85viewonclicklistener">2.5.2 &#x5C01;&#x88C5;View.OnClickListener</h3>
+
+<p>[&#x8BF4;&#x660E;] : &#x5728;&#x4E3B;&#x6D3B;&#x52A8;&#x4E2D;,&#x591A;&#x6B21;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;,&#x5176;&#x4E2D;&#x4EC5;&#x4EC5;&#x90E8;&#x5206;&#x6539;&#x53D8;.&#x56E0;&#x6B64;&#x5C06;&#x8BE5;&#x65B9;&#x6CD5;&#x63D0;&#x53D6;&#x51FA;&#x6765;.<br>
+1.&#x63D0;&#x53D6;&#x51FA;&#x65B9;&#x6CD5;</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">private</span> <span class="token keyword">class</span> <span class="token class-name">OnClick</span> <span class="token keyword">implements</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Intent</span> intent <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_textview<span class="token operator">:</span>
+                <span class="token comment">// &#x8DF3;&#x8F6C;&#x5230; TextView &#x6F14;&#x793A;&#x754C;&#x9762;</span>
+                intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">TextViewActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_button<span class="token operator">:</span>
+                intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">ButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_edittext<span class="token operator">:</span>
+                intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">EditTextActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>btn_radiobutton<span class="token operator">:</span>
+                intent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token class-name">MainActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token class-name">RadioButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">startActivity</span><span class="token punctuation">(</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><p>2.&#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x51FD;&#x6570;</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">setListeners</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token class-name">Onclick</span> onclick <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Onclick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  mBtnTextView<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span>onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  mBtnButton<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span>onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  mBtnEditText<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span>onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  mBtnRadioButton<span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span>onClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h3 class="mume-header" id="253-%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E7%9A%84%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6">2.5.3 &#x5355;&#x9009;&#x6309;&#x94AE;&#x7684;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;:</h3>
+
+<ul>
+<li>&#x6309;&#x94AE;&#x7EC4;&#x7684;&#x5E03;&#x5C40;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RadioGroup</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/rg_1<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">...</span>
+<span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RadioButton</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/rb_1<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x7537;<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RadioButton</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/rb_2<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x5973;<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>RadioGroup</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>&#x76D1;&#x542C;&#x51FD;&#x6570;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RadioButtonActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token class-name">RadioGroup</span> mRg1<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mRg1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">RadioGroup</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>rg_1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mRg1<span class="token punctuation">.</span><span class="token function">setOnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">RadioGroup</span><span class="token punctuation">.</span><span class="token class-name">OnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCheckedChanged</span><span class="token punctuation">(</span><span class="token class-name">RadioGroup</span> group<span class="token punctuation">,</span> <span class="token keyword">int</span> checkedId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">RadioButton</span> radioButton <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">RadioButton</span><span class="token punctuation">)</span> group<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span>checkedId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">RadioButtonActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> radioButton<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH<span class="token punctuation">.</span>SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><p>[&#x8BF4;&#x660E;] :<br>
+1.&#x4E00;&#x4E2A;&#x6D3B;&#x52A8;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;<br>
+2.&#x6240;&#x6709;&#x6D3B;&#x52A8;&#x90FD;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;<code>AppCompatActiviry</code><br>
+3.<code>protected</code>: &#x81EA;&#x5DF1;&#x548C;&#x5B50;&#x7C7B;&#x90FD;&#x80FD;&#x4F7F;&#x7528;.<br>
+4.<code>private</code>: &#x9664;&#x4E86;&#x81EA;&#x5DF1;&#x4E4B;&#x5916;,&#x5176;&#x4ED6;&#x7C7B;&#x90FD;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</p>
+<h3 class="mume-header" id="25x-%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">2.5.x &#x53C2;&#x6570;&#x8BF4;&#x660E;:</h3>
+
+<p>1.<code>android:checked</code>: &#x9ED8;&#x8BA4;&#x9009;&#x4E2D;<br>
+2.<code>android:state_checked=&quot;true&quot;</code>: &#x70B9;&#x51FB;&#x65F6;&#x663E;&#x793A;&#x7684;&#x6837;&#x5F0F;<br>
+3.<code>&lt;solid android:color=&quot;#cc7a00&quot;&gt;</code>: &#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x7684;&#x989C;&#x8272;&#x586B;&#x5145;&#x5757;<br>
+4.<code>&lt;stroke android:width=&quot;1dp&quot;&gt;</code>: 1&#x4E2A;&#x5355;&#x4F4D;&#x5BBD;&#x5EA6;&#x7684;&#x77E9;&#x5F62;&#x7EBF;<br>
+5.<code>corners android:radius=&quot;15dp&quot;</code>: &#x77E9;&#x5F62;&#x7684;&#x8FB9;&#x89D2;&#x66F2;&#x7387;15&#x4E2A;&#x5355;&#x4F4D;</p>
+<p>[&#x62A5;&#x9519;]:<br>
+1.<code>Variable &apos;intent&apos; might not have been initialized</code>: &#x53D8;&#x91CF;<code>intent</code>&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;</p>
+<h2 class="mume-header" id="26-%E5%A4%8D%E9%80%89%E6%A1%86-checkbox">2.6 &#x590D;&#x9009;&#x6846; CheckBox</h2>
+
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;</li>
+<li>&#x76D1;&#x542C;&#x4E8B;&#x4EF6;</li>
+</ul>
+<h3 class="mume-header" id="261-%E7%BA%BF%E6%80%A7%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80-%E5%A4%8D%E9%80%89%E6%A1%86%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">2.6.1 &#x7EBF;&#x6027;&#x5782;&#x76F4;&#x5E03;&#x5C40; + &#x590D;&#x9009;&#x6846;&#x57FA;&#x672C;&#x8BED;&#x6CD5;</h3>
+
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LinearLayout</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>orientation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>vertical<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_below</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@id/cb_6<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20dp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextView</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20sp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x4F60;&#x7684;&#x5174;&#x8DA3;:<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textColor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#000<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CheckBox</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/cb_7<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x7F16;&#x7A0B;<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20sp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5sp<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CheckBox</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/cb_8<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x7F16;&#x7A0B;<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>textSize</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20sp<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5sp<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>LinearLayout</span><span class="token punctuation">&gt;</span></span>
+</pre><h3 class="mume-header" id="262-%E5%88%B6%E4%BD%9C%E5%B8%A6%E5%9B%BE%E6%A0%87%E7%9A%84%E5%A4%8D%E9%80%89%E6%A1%86">2.6.2 &#x5236;&#x4F5C;&#x5E26;&#x56FE;&#x6807;&#x7684;&#x590D;&#x9009;&#x6846;</h3>
+
+<p>1.&#x51C6;&#x5907;&#x597D;2&#x4E2A;&#x56FE;&#x6807; <code>icon1</code> &#x548C; <code>icon2</code><br>
+2.&#x5C06;2&#x4E2A;&#x56FE;&#x6807;&#x653E;&#x5165;<code>res/drawable-xxhdpi</code><br>
+3.&#x51C6;&#x5907;&#x9009;&#x62E9;&#x5668;: <code>bg_check.xml</code></p>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>selector</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>state_checked</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>drawable</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/icon_checkbox_false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>state_checked</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name"><span class="token namespace">android:</span>drawable</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/icon_checkbox_true<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>selector</span><span class="token punctuation">&gt;</span></span>
+</pre><p>[&#x8BF4;&#x660E;] :</p>
+<ul>
+<li>(1)<code>android:state_checked=&apos;false&apos;</code>: &#x672A;&#x9009;&#x4E2D;</li>
+<li>(2)<code>android:drawble=&apos;@drawable/icon_checkbox_false&apos;</code>: &#x4F7F;&#x7528;<code>icon_checkbox_false</code>&#x56FE;&#x6807;</li>
+</ul>
+<p>4.&#x5728;CheckBox&#x4E2D;&#x4F7F;&#x7528; Selector: <code>bg_check.xml</code></p>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CheckBox</span>
+  <span class="token attr-name">...</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>button</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/bg_check<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</pre><h3 class="mume-header" id="263-%E7%BB%99%E5%A4%8D%E9%80%89%E6%A1%86%E6%B7%BB%E5%8A%A0%E4%BA%8B%E4%BB%B6">2.6.3 &#x7ED9;&#x590D;&#x9009;&#x6846;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;</h3>
+
+<p>1.&#x5047;&#x8BBE;&#x590D;&#x9009;&#x6846;&#x7684;id&#x4E3A; <code>cb_1</code> &#x548C; <code>cb_2</code><br>
+2.&#x7F16;&#x5199;&#x590D;&#x9009;&#x6846;&#x7684;&#x6D3B;&#x52A8;&#x5982;&#x4E0B;: <code>CheckBoxActivity.java</code></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CheckBoxActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x58F0;&#x660E;&#x63A7;&#x4EF6;</span>
+  <span class="token keyword">private</span>  <span class="token class-name">CheckBox</span> mCb1<span class="token punctuation">,</span> mCb2<span class="token punctuation">;</span>
+  <span class="token annotation punctuation">@override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x83B7;&#x53D6;&#x63A7;&#x4EF6;&#x7684;&#x89C6;&#x56FE;</span>
+    mCb1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">CheckBox</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>cb_1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mCb2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">CheckBox</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>cb_2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    mCb1<span class="token punctuation">.</span><span class="token function">setOnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">CompoundButton</span><span class="token punctuation">.</span><span class="token class-name">OnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCheckedChanged</span><span class="token punctuation">(</span><span class="token class-name">CompoundButton</span> buttonView<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isChecked<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">CheckBoxActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> isChecked<span class="token operator">?</span> <span class="token string">&apos;1&#x9009;&#x4E2D;&apos;</span><span class="token operator">:</span> <span class="token string">&apos;1&#x53D6;&#x6D88;&apos;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    mCb2<span class="token punctuation">.</span><span class="token function">setOnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">CompoundButton</span><span class="token punctuation">.</span><span class="token class-name">OnCheckedChangeListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCheckedChanged</span><span class="token punctuation">(</span><span class="token class-name">CompoundButton</span> buttonView<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isChecked<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">CheckBoxActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> isChecked<span class="token operator">?</span> <span class="token string">&apos;2&#x9009;&#x4E2D;&apos;</span><span class="token operator">:</span> <span class="token string">&apos;2&#x53D6;&#x6D88;&apos;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="27-imageview">2.7 ImageView</h2>
+
+<ul>
+<li>Button&#x7684;&#x5176;&#x4ED6;&#x884D;&#x751F;&#x63A7;&#x4EF6;: ToggleButton&#x3001;Switch(&#x7565;)</li>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>&#x52A0;&#x8F7D;&#x7F51;&#x7EDC;&#x56FE;&#x7247;</li>
+</ul>
+<h3 class="mume-header" id="271-%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84imageview%E8%AF%AD%E6%B3%95">2.7.1 &#x6700;&#x57FA;&#x672C;&#x7684;ImageView&#x8BED;&#x6CD5;</h3>
+
+<ul>
+<li>activity_image_view.xml</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ImageView</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>300dp<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>200dp<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>background</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#ff9900<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/bg_icon_man<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>scaleType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fixXY<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</pre><p>[&#x8BF4;&#x660E;] :<br>
+1.<code>android:scaleType=&quot;fixXY&quot;</code>: &#x6491;&#x6EE1;&#x63A7;&#x4EF6;,&#x5BBD;&#x9AD8;&#x6BD4;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x53D8;&#x5316;<br>
+2.<code>android:scaleType=&quot;fitCenter&quot;</code>: &#x4FDD;&#x6301;&#x5BBD;&#x9AD8;&#x6BD4;&#x7F29;&#x653E;,&#x76F4;&#x5230;&#x80FD;&#x5B8C;&#x5168;&#x663E;&#x793A;<br>
+3.<code>android:scaleType=&quot;centerCrop&quot;</code>: &#x4FDD;&#x6301;&#x5BBD;&#x9AD8;&#x6BD4;&#x7F29;&#x653E;,&#x76F4;&#x81F3;&#x5B8C;&#x5168;&#x8986;&#x76D6;&#x63A7;&#x4EF6;,&#x88C1;&#x526A;&#x663E;&#x793A;</p>
+<h3 class="mume-header" id="272-%E4%BD%BF%E7%94%A8imageview%E5%8A%A0%E8%BD%BD%E4%B8%80%E5%BC%A0%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87">2.7.2 &#x4F7F;&#x7528;ImageView&#x52A0;&#x8F7D;&#x4E00;&#x5F20;&#x7F51;&#x7EDC;&#x56FE;&#x7247;</h3>
+
+<p>1.&#x5199;&#x597D;&#x63A7;&#x4EF6;: <code>activity_image_view.xml</code></p>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ImageView</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/iv_4<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>200dp<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>100dp<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</pre><p>2.&#x914D;&#x7F6E;glide: <code>/app/build.gradle</code></p>
+<pre data-role="codeBlock" data-info="gradle" class="language-gradle"><code>repositories {
+    mavenCentral()
+    google()
+}
+dependencies {
+    implementation &apos;com.github.bumptech.glide:glide:4.10.0&apos;
+    annotationProcessor &apos;com.github.bumptech.glide:compiler:4.10.0&apos;
+}
+</code></pre><p>[&#x8BF4;&#x660E;] :</p>
+<ul>
+<li>(1)&#x4F7F;&#x7528;glide&#x8FDB;&#x884C;&#x7F51;&#x7EDC;&#x8D44;&#x6E90;&#x8BF7;&#x6C42;</li>
+<li>(2)Android Studio&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x7684;&#x6309;&#x7167; build.gradle &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x8FDB;&#x884C;Jar&#x5305;&#x540C;&#x6B65;</li>
+</ul>
+<p>3.&#x83B7;&#x53D6;&#x63A7;&#x4EF6;<code>iv_4</code>,&#x5E76;&#x4F7F;&#x7528;glide&#x5F80;&#x91CC;&#x9762;&#x52A0;&#x8D44;&#x6E90;</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>appcompat<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">AppCompatActivity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">ImageView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>bumptech<span class="token punctuation">.</span>glide</span><span class="token punctuation">.</span><span class="token class-name">Glide</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ImageViewActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+  <span class="token keyword">private</span> <span class="token class-name">ImageView</span> mIv4<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_image_view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mIv4 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ImageView</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>iv_4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Glide</span><span class="token punctuation">.</span><span class="token keyword">with</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">&quot;https://www.baidu.com/img/bd_logo1.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span>mIv4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</pre><p>[&#x62A5;&#x9519;] :</p>
+<ul>
+<li>1)<code>Request threw uncaught throwable java.lang.SecurityException: Permission denied (missing INTERNET permission?)</code>: &#x4F7F;&#x7528;glide&#x8FDB;&#x884C;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x65F6;,&#x9700;&#x8981;&#x914D;&#x7F6E;&#x6743;&#x9650;.&#x5728;&#x8DEF;&#x5F84;<code>/app/src/main/AndroidMainfest.xml</code>&#x4E2D;&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;&#x6743;&#x9650;&#x5982;&#x4E0B;:</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use-permission</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>android.permission.INTERNET<span class="token punctuation">&quot;</span></span>  <span class="token punctuation">/&gt;</span></span>
+</pre><h2 class="mume-header" id="28-%E5%88%97%E8%A1%A8%E8%A7%86%E5%9B%BElistview%E7%9F%A5%E9%81%93%E8%A2%ABrecyclerview%E6%9B%BF%E4%BB%A3">2.8 &#x5217;&#x8868;&#x89C6;&#x56FE;ListView(&#x77E5;&#x9053;,&#x88AB;RecyclerView&#x66FF;&#x4EE3;)</h2>
+
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>Adapter&#x63A5;&#x53E3;</li>
+<li>Demo&#x6F14;&#x793A;</li>
+</ul>
+<h3 class="mume-header" id="281-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAlistviewactivity%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%E4%BE%9D%E8%B5%96">2.8.1 &#x521B;&#x5EFA;&#x4E00;&#x4E2A;ListViewActivity(&#x624B;&#x52A8;&#x5BFC;&#x5165;&#x4F9D;&#x8D56;)</h3>
+
+<ul>
+<li>1)&#x5728;<code>com.skypan.textview</code>&#x5305;&#x4E0B;,&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5305;<code>listview</code></li>
+<li>2)&#x5728;<code>listview</code>&#x4E0B;,&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;Java&#x7C7B;.&#x6CE8;&#x610F;: <code>Name: ListViewActivity</code> &#x548C; <code>Superclass: android.app.Activity</code></li>
+<li>3)&#x521B;&#x5EFA;&#x89C6;&#x56FE;: <code>activity_listview.xml</code>, &#x5728;&#x8DEF;&#x5F84; <code>/app/src/main/res/layout</code></li>
+<li>4)&#x5B8C;&#x5584;<code>ListViewActivity.java</code>:</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>skypan<span class="token punctuation">.</span>textview<span class="token punctuation">.</span>listview</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">Activity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">andoird<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">androidx<span class="token punctuation">.</span>annotation</span><span class="token punctuation">.</span><span class="token class-name">Nullable</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>skypan<span class="token punctuation">.</span>textview</span><span class="token punctuation">.</span><span class="token class-name">R</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ListViewActivity</span> <span class="token keyword">extends</span> <span class="token class-name">Activity</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Nullable</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_listview<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>5)&#x5C06;<code>AndroidManifex.xml</code>&#x58F0;&#x660E;<code>ListViewActivity.java</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activity</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>.listview.ListViewActivity<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="282-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2-%E4%BD%BF%E7%94%A8">2.8.2 &#x81EA;&#x5B9A;&#x4E49;&#x989C;&#x8272; + &#x4F7F;&#x7528;</h3>
+
+<ul>
+<li>1)&#x5728;<code>/app/src/main/res/values/colors.xml</code>&#x4E2D;&#x5199;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x989C;&#x8272;,&#x5982;&#x4E0B;</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resources</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>color</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>colorGray<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>#D5D5D5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>color</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resources</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>2)&#x4F7F;&#x7528;</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TextView</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>textColor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@color/colorGrayDark<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="283-%E8%87%AA%E5%AE%9A%E4%B9%89list-view-%E6%8C%89%E5%8E%8B%E6%A0%B7%E5%BC%8F">2.8.3 &#x81EA;&#x5B9A;&#x4E49;List View &#x6309;&#x538B;&#x6837;&#x5F0F;</h3>
+
+<ul>
+<li>1)&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;(Selector): <code>/app/src/main/res/drawable</code> -&gt; new Drawable Resource file -&gt; <code>layout_list_item.xml</code></li>
+<li>2)<code>list_item.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>selector</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>android</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://schemas.android.com/apk/res/android<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name"><span class="token namespace">android:</span>drawable</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@color/colorAcecent<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">android:</span>state_pressed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name"><span class="token namespace">android:</span>drawable</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@color/colorWhite<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">android:</span>state_pressed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>selector</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>3)&#x5728;List View&#x4E2D;&#x4F7F;&#x7528;: <code>activity_listview.xml</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ListView</span>
+  <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@+id/lv_1<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>match_parent<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap_content<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">android:</span>listSelector</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>@drawable/list_item<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</pre><h3 class="mume-header" id="284-list-view%E7%9A%84%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6">2.8.4 List View&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</h3>
+
+<p>[&#x53C2;&#x6570;]:</p>
+<ul>
+<li>1)<code>setOnItemClickListener</code>: &#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</li>
+<li>2)<code>setOnItemLongClickListener</code>: &#x957F;&#x6309;&#x4E8B;&#x4EF6;</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>app</span><span class="token punctuation">.</span><span class="token class-name">Activity</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>os</span><span class="token punctuation">.</span><span class="token class-name">Bundle</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">AdapterView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">Toast</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">ListView</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ListViewActivity</span> <span class="token keyword">extends</span> <span class="token class-name">Activity</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// &#x58F0;&#x660E; ListView&#x63A7;&#x4EF6;</span>
+  <span class="token keyword">private</span> <span class="token class-name">ListView</span> mLv1<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCrete</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Nullable</span> <span class="token class-name">Bundle</span> savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">setContentView</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_listview<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mLv1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ListView</span><span class="token punctuation">)</span> <span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>lv_1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mLv1<span class="token punctuation">.</span><span class="token function">setAdapter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MyListAdapter</span><span class="token punctuation">(</span><span class="token class-name">ListViewActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mLv1<span class="token punctuation">.</span><span class="token function">setOnItemClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">AdapterView</span><span class="token punctuation">.</span><span class="token class-name">OnItemClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onItemClick</span><span class="token punctuation">(</span><span class="token class-name">AdapterView</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> parent<span class="token punctuation">,</span> <span class="token class-name">View</span> view<span class="token punctuation">,</span> <span class="token keyword">int</span> position<span class="token punctuation">,</span> <span class="token keyword">long</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">ListViewActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> text<span class="token operator">:</span><span class="token string">&quot;&#x70B9;&#x51FB;&#x4E86;&quot;</span> <span class="token operator">+</span> position<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><p>[&#x8BF4;&#x660E;] :</p>
+<ul>
+<li>1)&#x516C;&#x6709;&#x7C7B;<code>ListViewActivity</code>&#x7EE7;&#x627F;&#x5B89;&#x5353;&#x7684;app&#x4E0B;&#x9762;&#x7684;&#x516C;&#x6709;&#x7C7B;<code>Activity</code></li>
+<li>2)ListView&#x6765;&#x81EA;<code>Android.widget.ListView</code></li>
+<li>3)&#x9002;&#x914D;&#x5668;&#x7C7B;<code>MyListAdapter</code>&#x4EE3;&#x7801;&#x5982;&#x4E0B;:<code>@/src/main/java/com.skypan.textview/listview/MyListAdapter.java</code></li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>skypan<span class="token punctuation">.</span>textview<span class="token punctuation">.</span>listview</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">BaseAdapter</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>content</span><span class="token punctuation">.</span><span class="token class-name">Context</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">LayoutInflater</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">ImageView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>widget</span><span class="token punctuation">.</span><span class="token class-name">TextView</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">View</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">android<span class="token punctuation">.</span>view</span><span class="token punctuation">.</span><span class="token class-name">ViewGroup</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>bumptech<span class="token punctuation">.</span>glide</span><span class="token punctuation">.</span><span class="token class-name">Glide</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>skypan<span class="token punctuation">.</span>textview</span><span class="token punctuation">.</span><span class="token class-name">R</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyListAdapter</span> <span class="token keyword">extends</span> <span class="token class-name">BaseAdapter</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">private</span> <span class="token class-name">Context</span> mContext<span class="token punctuation">;</span>
+  <span class="token keyword">private</span> <span class="token class-name">LayoutInflater</span> mLayoutInflater<span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token class-name">MyListAdapter</span><span class="token punctuation">(</span><span class="token class-name">Context</span> context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>mContext <span class="token operator">=</span> context<span class="token punctuation">;</span>
+    mLayoutInflater <span class="token operator">=</span> <span class="token class-name">LayoutInflater</span><span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">getItem</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token keyword">long</span> <span class="token function">getItemId</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ViewHolders</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">ImageView</span> imageView<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">TextView</span> tvTitle<span class="token punctuation">,</span> tvTime<span class="token punctuation">,</span> tvContent<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token class-name">View</span> <span class="token function">getView</span><span class="token punctuation">(</span><span class="token keyword">int</span> position<span class="token punctuation">,</span> <span class="token class-name">View</span> convertView<span class="token punctuation">,</span> <span class="token class-name">ViewGroup</span> parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ViewHolder</span> holder <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>convertView <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      convertView <span class="token operator">=</span> mLayoutInflater<span class="token punctuation">.</span><span class="token function">inflate</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>layout<span class="token punctuation">.</span>layout_list_item<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      holder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ViewHolder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      holder<span class="token punctuation">.</span>imageView <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ImageView</span><span class="token punctuation">)</span> convertView<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>iv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      holder<span class="token punctuation">.</span>tvTitle <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> convertView<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      hodler<span class="token punctuation">.</span>tvTime <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> convertView<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      hodler<span class="token punctuation">.</span>tvContent <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">TextView</span><span class="token punctuation">)</span> convertView<span class="token punctuation">.</span><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>tv_content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      convertView<span class="token punctuation">.</span><span class="token function">setTag</span><span class="token punctuation">(</span>holder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      holder <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">ViewHolder</span><span class="token punctuation">)</span> convertView<span class="token punctuation">.</span><span class="token function">getTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x7ED9;&#x63A7;&#x4EF6;&#x8D4B;&#x503C;</span>
+    holder<span class="token punctuation">.</span>tvTitle<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">&apos;&#x8FD9;&#x662F;&#x6807;&#x9898;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    holder<span class="token punctuation">.</span>tvTime<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">&apos;2088-08-08&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    holder<span class="token punctuation">.</span>tvContent<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">&apos;&#x8FD9;&#x662F;&#x5185;&#x5BB9;&#x5450;~!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Glide</span><span class="token punctuation">.</span><span class="token keyword">with</span><span class="token punctuation">(</span>mContext<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">&quot;https://www.baidu.com/img/bd_logo1.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span>holder<span class="token punctuation">.</span>imageView<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> convertView<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="2x-tcp%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%B8%8E%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B">2.x TCP&#x7684;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x4E0E;&#x56DB;&#x6B21;&#x6325;&#x624B;</h2>
+
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/LyiwQuBQvtwV4RQCVsPQ7A">&#x539F;&#x5740;</a></li>
+<li>1)&#x8BF7;&#x753B;&#x51FA;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x548C;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x7684;&#x793A;&#x610F;&#x56FE;(&#x7565;)</li>
+<li>2)&#x4E3A;&#x4EC0;&#x4E48;&#x8FDE;&#x63A5;&#x7684;&#x65F6;&#x5019;&#x662F;&#x4E09;&#x6B21;&#x63E1;&#x624B;?<br>
+<a href="https://www.zhihu.com/question/24853633">&#x53C2;&#x8003;</a></li>
+</ul>
+<p>[try]:</p>
+<ul>
+<li>
+<p>(1)TCP&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x53EF;&#x9760;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;,&#x5176;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;: &#x65E2;&#x8981;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x53EF;&#x9760;&#x4F20;&#x8F93;,&#x53C8;&#x8981;&#x63D0;&#x9AD8;&#x4F20;&#x8F93;&#x7684;&#x6548;&#x7387;,&#x800C;&#x7528;&#x4E09;&#x6B21;&#x6070;&#x6070;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;.</p>
+</li>
+<li>
+<p>(2)TCP&#x53EF;&#x9760;&#x4F20;&#x8F93;&#x7684;&#x7CBE;&#x9AD3;,TCP&#x8FDE;&#x63A5;&#x7684;&#x4E00;&#x65B9;A,&#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x52A8;&#x6001;&#x968F;&#x673A;&#x9009;&#x53D6;&#x4E00;&#x4E2A;32&#x4F4D;&#x957F;&#x7684;&#x5E8F;&#x5217;&#x53F7;(Initial Sequelize Number),&#x5047;&#x8BBE;A&#x7684;&#x521D;&#x59CB;&#x5E8F;&#x5217;&#x53F7;&#x4E3A;1000,&#x4EE5;&#x8BE5;&#x5E8F;&#x5217;&#x53F7;&#x4E3A;&#x539F;&#x70B9;,&#x5BF9;&#x81EA;&#x5DF1;&#x5C06;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7F16;&#x53F7;,1001,1002,1003...,&#x5E76;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x521D;&#x59CB;&#x5E8F;&#x53F7;ISN&#x544A;&#x8BC9;B,&#x544A;&#x8BC9;B&#x4EC0;&#x4E48;&#x6837;&#x7F16;&#x53F7;&#x7684;&#x6570;&#x636E;&#x662F;&#x5408;&#x6CD5;&#x7684;,&#x4EC0;&#x4E48;&#x7F16;&#x53F7;&#x7684;&#x6570;&#x636E;&#x662F;&#x975E;&#x5408;&#x6CD5;&#x7684;,&#x540C;&#x65F6;B&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;A&#x6BCF;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;&#x7684;&#x5B57;&#x8282;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x786E;&#x8BA4;&#x3002;&#x5982;&#x679C;A&#x6536;&#x5230;B&#x7684;&#x786E;&#x8BA4;&#x7F16;&#x53F7;2001,&#x5219;&#x610F;&#x5473;&#x7740;&#x5B57;&#x8282;&#x7F16;&#x53F7;1001~2000,&#x5171;1000&#x4E2A;&#x5B57;&#x8282;&#x5DF2;&#x7ECF;&#x5B89;&#x5168;&#x5230;&#x8FBE;</p>
+</li>
+<li>
+<p>3)&#x4EC0;&#x4E48;&#x662F;&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;?<br>
+[try]: &#x5728;TCP&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;,&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;SYN&#x5305;,&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x8BE5;&#x8FDE;&#x63A5;&#x4FDD;&#x5B58;&#x5728;&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;&#x4E2D;</p>
+</li>
+<li>
+<p>4)ISN(Initial Sequence Number)&#x662F;&#x56FA;&#x5B9A;&#x7684;&#x5417;?<br>
+[try]: &#x4E0D;&#x662F;&#x56FA;&#x5B9A;&#x7684;,&#x968F;&#x673A;ISN&#x80FD;&#x907F;&#x514D;&#x975E;&#x540C;&#x4E00;&#x7F51;&#x7EDC;&#x7684;&#x653B;&#x51FB;</p>
+</li>
+<li>
+<p>5)&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x643A;&#x5E26;&#x6570;&#x636E;&#x5417;?<br>
+[try]: &#x6839;&#x636E;RFC793&#x6807;&#x51C6;,TCP&#x7684;&#x524D;2&#x6B21;&#x63E1;&#x624B;&#x4E0D;&#x5141;&#x8BB8;&#x643A;&#x5E26;&#x6570;&#x636E;,&#x4F46;&#x662F;&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x5141;&#x8BB8;&#x643A;&#x5E26;&#x6570;&#x636E;</p>
+</li>
+<li>
+<p>6)&#x5982;&#x679C;&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x4E22;&#x5931;&#x4E86;,&#x5BA2;&#x6237;&#x7AEF;/&#x670D;&#x52A1;&#x7AEF; &#x4F1A;&#x5982;&#x4F55;&#x5904;&#x7406;?<br>
+<a href="https://blog.csdn.net/gochenguowei/article/details/79649997">&#x53C2;&#x8003;</a></p>
+</li>
+</ul>
+<p>[try]:</p>
+<ul>
+<li>(1)Server&#x7AEF;: &#x6B64;&#x65F6;Server&#x7AEF;&#x7684;&#x72B6;&#x6001;&#x4E3A;SYN_RECV,&#x5E76;&#x4E14;&#x4F1A;&#x6839;&#x636E;TCP&#x7684;&#x8D85;&#x65F6;&#x91CD;&#x4F20;&#x673A;&#x5236;,&#x4F1A;&#x7B49;&#x5F85;3&#x79D2;&#x3001;6&#x79D2;&#x3001;12&#x79D2;&#x540E;&#x91CD;&#x65B0;&#x53D1;&#x9001; SYN + ACK &#x5305;,&#x4EE5;&#x4FBF;Client&#x91CD;&#x65B0;&#x53D1;&#x9001;ACK&#x5305;.&#x800C;Server&#x91CD;&#x53D1;SYN + ACK&#x5305;&#x7684;&#x6B21;&#x6570;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;<code>/proc/sys/net/ipv4/tcp_synack_retries</code>&#x4FEE;&#x6539;,&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;5.&#x5982;&#x679C;&#x91CD;&#x53D1;&#x6B21;&#x6570;&#x8FBE;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x6B21;&#x6570;&#x4ECD;&#x672A;&#x6536;&#x5230;client&#x7684;ACK&#x5E94;&#x7B54;,&#x90A3;&#x4E48;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;,Server&#x81EA;&#x52A8;&#x5173;&#x95ED;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;.</li>
+<li>(2)Client&#x7AEF;: Linux C&#x4E2D;,client&#x63A5;&#x6536;&#x5230; SYN + ACK&#x5305;&#x4E4B;&#x540E;,&#x5B83;&#x7684;TCP&#x72B6;&#x6001;&#x5C31;&#x4E3A;established,&#x8868;&#x793A;&#x8BE5;&#x8FDE;&#x63A5;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;.&#x5982;&#x679C;&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x4E2D;&#x7684;ACK&#x5305;&#x4E22;&#x5931;&#x7684;&#x60C5;&#x51B5;&#x4E0B;,Client&#x5411;Server&#x7AEF;&#x53D1;&#x9001;&#x6570;&#x636E;,Server&#x7AEF;&#x5C06;&#x4EE5;RST&#x5305;&#x54CD;&#x5E94;,&#x65B9;&#x80FD;&#x611F;&#x77E5;Server&#x7684;&#x9519;&#x8BEF;.</li>
+<li>7)SYN&#x653B;&#x51FB;&#x662F;&#x4EC0;&#x4E48;?<br>
+[try]: TCP&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x65F6;,&#x53EA;&#x53D1;&#x9001; SYN&#x5305;, &#x800C;&#x4E0D;&#x53D1;&#x9001; ACK&#x5305;.</li>
+<li>8)&#x6325;&#x624B;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x56DB;&#x6B21;? (&#x540E;&#x9762;&#x89E3;&#x8BFB;)</li>
+<li>9)&#x56DB;&#x6B21;&#x6325;&#x624B;&#x91CA;&#x653E;&#x8FDE;&#x63A5;&#x65F6;,&#x7B49;&#x5F85;2MSL&#x7684;&#x610F;&#x4E49;? (&#x540E;&#x9762;&#x89E3;&#x8BFB;)</li>
+</ul>
+<h3 class="mume-header" id="2xx-tcp%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%8D%8A%E8%BF%9E%E6%8E%A5%E9%98%9F%E5%88%97">2.x.x TCP&#x5168;&#x8FDE;&#x63A5;/&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;</h3>
+
+<ul>
+<li>
+<p><a href="https://gameinstitute.qq.com/community/detail/125763">&#x539F;&#x5740;</a></p>
+</li>
+<li>
+<p>1)&#x4EC0;&#x4E48;&#x662F;&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;,&#x5168;&#x8FDE;&#x63A5;&#x961F;&#x5217;?<br>
+[a] Linux&#x5185;&#x6838;&#x534F;&#x8BAE;&#x6808;&#x4E3A;&#x4E00;&#x4E2A;tcp&#x8FDE;&#x63A5;&#x7BA1;&#x7406;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x961F;&#x5217;,&#x4E00;&#x4E2A;&#x662F;&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;(&#x7528;&#x6765;&#x4FDD;&#x5B58;SYN_SEN&#x548C;SYN_RECV&#x72B6;&#x6001;&#x7684;&#x8BF7;&#x6C42;),&#x4E00;&#x4E2A;&#x662F;&#x5168;&#x8FDE;&#x63A5;&#x961F;&#x5217;(acceptd&#x961F;&#x5217;)(&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x5904;&#x4E8E;established&#x72B6;&#x6001;,&#x4F46;&#x662F;&#x5E94;&#x7528;&#x5C42;&#x6CA1;&#x6709;&#x8C03;&#x7528;accept&#x53D6;&#x8D70;&#x7684;&#x8BF7;&#x6C42;.)</p>
+</li>
+<li>
+<p>2)TCP&#x8FDE;&#x63A5;&#x57FA;&#x672C;&#x6982;&#x5FF5;</p>
+<ul>
+<li>&#x4E09;&#x6B21;&#x63E1;&#x624B;<br>
+(1)&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;: &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;syn&#x5305;(syn=i)&#x5230;&#x670D;&#x52A1;&#x5668;,&#x5E76;&#x8FDB;&#x5165;SYN_SEND&#x72B6;&#x6001;,&#x5E76;&#x7B49;&#x5F85;&#x670D;&#x52A1;&#x5668;&#x786E;&#x8BA4;;<br>
+(2)&#x7B2C;&#x4E8C;&#x6B21;&#x63E1;&#x624B;: &#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;syn&#x5305;,&#x5FC5;&#x987B;&#x786E;&#x8BA4;&#x5BA2;&#x6237;&#x7684;SYN(ack=j+1), &#x540C;&#x65F6;&#x4E5F;&#x53D1;&#x9001;&#x4E00;&#x4E2A;SYN&#x5305;(syn=k), &#x5373;SYN + ACK&#x5305;, &#x6B64;&#x65F6;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x5165; SYN_RECV &#x72B6;&#x6001;.<br>
+(3)&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;: &#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684; SYN + ACK&#x5305;,&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;ACK(ack=k+1),&#x6B64;&#x5305;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;,&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x5165;ESTABLISHED&#x72B6;&#x6001;,&#x5B8C;&#x6210;&#x4E09;&#x6B21;&#x63E1;&#x624B;.</li>
+</ul>
+</li>
+<li>
+<p>3)&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;(sync queue) &#x548C; &#x5168;&#x8FDE;&#x63A5;&#x961F;&#x5217;(accept queue)</p>
+<ul>
+<li>(1)sync queue: &#x662F;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x6536;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;&#x8BF7;&#x6C42;SYN&#x540E;,&#x5C06;&#x8BE5;&#x8FDE;&#x63A5;&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x4E2D;,&#x5F53;&#x6536;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;ACK&#x540E;,&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x51FA;</li>
+<li>(2)accept queue: &#x662F;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x5BA2;&#x6237;&#x7AEF;ACK&#x540E;,&#x5C06;&#x8FDE;&#x63A5;&#x52A0;&#x5165;&#x5230;&#x7684;&#x961F;&#x5217;,&#x5728;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;accept&#x5904;&#x7406;&#x540E;,&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x79FB;&#x51FA;.</li>
+</ul>
+</li>
+<li>
+<p>4)&#x9ED1;&#x5BA2;&#x653B;&#x51FB; - SYN&#x6D2A;&#x6C34;(SYN FLOOD)</p>
+<ul>
+<li>SYN&#x653B;&#x51FB;&#x5C5E;&#x4E8E;DOS&#x653B;&#x51FB;&#x7684;&#x4E00;&#x79CD;,&#x5B83;&#x5229;&#x7528;TCP&#x534F;&#x8BAE;&#x7F3A;&#x9677;,&#x901A;&#x8FC7;&#x53D1;&#x9001;&#x5927;&#x91CF;&#x7684;SYN&#x8BF7;&#x6C42;,&#x800C;&#x4E0D;&#x56DE;&#x590D;ACK,&#x5360;&#x7528;&#x5927;&#x91CF;&#x670D;&#x52A1;&#x5668;&#x7684;&#x534A;&#x8FDE;&#x63A5;&#x961F;&#x5217;&#x8D44;&#x6E90;,&#x8FDB;&#x800C;&#x5BFC;&#x81F4;&#x961F;&#x5217;&#x6EA2;&#x51FA;,&#x65E0;&#x6CD5;&#x54CD;&#x5E94;&#x6B63;&#x5E38;&#x7684;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;,&#x8017;&#x8D39;CPU&#x548C;&#x5185;&#x5B58;&#x8D44;&#x6E90;.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
